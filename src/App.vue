@@ -91,6 +91,12 @@
                       <span class="sub-item">Registration</span>
                     </router-link>
                   </li>
+                  <!-- Datatable -->
+                  <li>
+                    <router-link :to="{ name: 'datatable_objects' }">
+                      <span class="sub-item">Datatable</span>
+                    </router-link>
+                  </li>
                 </ul>
               </div>
             </li>
