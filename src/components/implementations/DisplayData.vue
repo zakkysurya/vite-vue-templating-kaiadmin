@@ -54,9 +54,6 @@
 <script setup>
 import { computed } from "vue";
 
-// Emit event ke komponen induk ketika tombol kembali diklik
-const emit = defineEmits(["goBack"]);
-
 // Props menerima data form yang disubmit
 const props = defineProps({
   formData: Object,
@@ -67,6 +64,8 @@ const imageURL = computed(() => {
   return props.formData.image ? URL.createObjectURL(props.formData.image) : "";
 });
 
+// Emit event ke komponen induk ketika tombol kembali diklik
+const emit = defineEmits(["goBack"]);
 // Fungsi untuk memanggil event ketika tombol kembali diklik
 const back = () => {
   emit("goBack");
