@@ -3,7 +3,7 @@
 .form-floating input[type="file"] ~ label {
   top: -8px; /* Sesuaikan ini sesuai kebutuhan */
   font-size: 0.875rem;
-  color: #6c757d;
+  color: green;
 }
 /* atur posisi icon eye | eye-slash-icon (password & confirm password) */
 .form-floating .password-toggle-icon {
