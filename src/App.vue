@@ -97,6 +97,12 @@
                       <span class="sub-item">Datatable</span>
                     </router-link>
                   </li>
+                  <!-- Animation Form -->
+                  <li>
+                    <router-link :to="{ name: 'animation_form' }">
+                      <span class="sub-item">Animation Form</span>
+                    </router-link>
+                  </li>
                 </ul>
               </div>
             </li>
