@@ -17,23 +17,13 @@
           </div>
         </div>
         <div class="card-body">
-          <div class="table-striped">
-            <DataTable
-              :columns="columns"
-              :data="dataPhones.data"
-              :options="tableOptions"
-              class="display table table-striped table-hover"
-              width="100%"
-            >
-              <thead>
-                <tr>
-                  <th>No</th>
-                  <th>Merk</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-            </DataTable>
-          </div>
+          <DataTable
+            :columns="columns"
+            :data="dataPhones.data"
+            :options="tableOptions"
+            class="display table table-striped table-hover dataTable"
+            width="100%"
+          />
         </div>
       </div>
     </div>
@@ -66,23 +56,12 @@ const columns = [
       return `<button class="btn btn-sm btn-primary" onclick="alert('ID: ${row.id}')">View</button>`;
     },
     orderable: false,
+    className: "text-center", // Biarkan action button di tengah
   },
 ];
 // Opsi tambahan untuk DataTable
 const tableOptions = {
-  dom:
-    "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
-    "<'row'<'col-sm-12'tr>>" +
-    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
   pagingType: "full_numbers", // Tipe pagination dengan semua tombol (first, last, etc.)
-  language: {
-    paginate: {
-      first: "«",
-      last: "»",
-      next: "›",
-      previous: "‹",
-    },
-  },
 };
 
 // Reactive state untuk menyimpan data phones, Menyimpan data untuk DataTable
