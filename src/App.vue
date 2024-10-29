@@ -259,10 +259,10 @@
                         <div class="u-text">
                           <h4>Hizrian</h4>
                           <p class="text-muted">hello@example.com</p>
-                          <a
-                            href="profile.html"
+                          <router-link
+                            :to="{ name: 'profile' }"
                             class="btn btn-xs btn-secondary btn-sm"
-                            >View Profile</a
+                            >View Profile</router-link
                           >
                         </div>
                       </div>

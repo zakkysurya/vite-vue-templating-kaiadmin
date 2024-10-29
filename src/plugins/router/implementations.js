@@ -14,4 +14,9 @@ export default [
     name: "animation_form",
     component: () => import("@components/animations/AnimationForm.vue"),
   },
+  {
+    path: "/profile",
+    name: "profile",
+    component: () => import("@components/implementations/Profile.vue"),
+  },
 ];
